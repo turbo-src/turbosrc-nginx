@@ -16,15 +16,16 @@ and in a relative path (you'll have to define in you're `.conf` where asked in t
 
 ```
 turbosrc-nginx-ssl-info/
-  turbosrc-marialis.dev.key
-  turbosrc-marialis_dev.ca-bundle
-  turbosrc-marialis_dev_chain.crt
-  turbosrc-marialis_dev.crt
-  turbosrc-marialis_dev.csr
-  turbosrc-marialis.dev.key
+  YOUR_DOMAIN.key
+  YOUR_DOMAIN.ca-bundle
+  YOUR_DOMAIN_chain.crt
+  YOUR_DOMAIN.crt
+  YOUR_DOMAIN.csr
 ```
 
-The `..dev.key` is the private key (need to verify) used to sign the info contained in the `.csr` file.
+FYI can prepend your file names above however you want.
+
+The `YOUR_DOMAIN.key` is the private key (not 100% that's what it is) used to sign the info contained in the `.csr` file.
 
 ## nginx launch
 
